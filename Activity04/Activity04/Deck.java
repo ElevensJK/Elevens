@@ -1,4 +1,4 @@
-package Activity04;
+package Activity04.Activity04;
 
 import java.util.List;
 import java.util.ArrayList;

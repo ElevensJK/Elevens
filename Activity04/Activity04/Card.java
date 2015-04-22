@@ -1,4 +1,4 @@
-package Activity04;
+package Activity04.Activity04;
 
 /**
  * Card.java

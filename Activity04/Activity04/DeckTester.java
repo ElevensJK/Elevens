@@ -1,4 +1,4 @@
-package Activity04;
+package Activity04.Activity04;
 
 /**
  * This is a class that tests the Deck class.
