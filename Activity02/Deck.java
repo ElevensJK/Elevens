@@ -10,7 +10,6 @@ import java.util.ArrayList;
  */
 public class Deck {
 
-  
     /**
      * cards contains all the cards in the deck.
      */
@@ -24,7 +23,6 @@ public class Deck {
      */
     private int size;
 
-
     /**
      * Creates a new <code>Deck</code> instance.<BR>
      * It pairs each element of ranks with each element of suits,
@@ -35,21 +33,20 @@ public class Deck {
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
         cards = new ArrayList<Card>();
-          for (int i = 0; i < ranks.length; i++)
-{
-     Card card = new Card(ranks[i],suits[i],values[i]);
-     cards.add(card);
+        for (int i = 0; i < ranks.length; i++)
+        {
+            Card card = new Card(ranks[i],suits[i],values[i]);
+            cards.add(card);
+        }
+        size = cards.size();
     }
-    size = cards.size();
-    }
-
 
     /**
      * Determines if this deck is empty (no undealt cards).
      * @return true if this deck is empty, false otherwise.
      */
     public boolean isEmpty() {
-       return (size == 0);
+        return (size == 0);
     }
 
     /**
@@ -74,8 +71,8 @@ public class Deck {
      *         previously dealt.
      */
     public Card deal() {
-       size--;
-       return cards.get(size);
+        size--;
+        return cards.get(size);
     }
 
     /**
